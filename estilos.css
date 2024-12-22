@@ -1,0 +1,82 @@
+.body-index {
+    background-image: url("brico.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh;
+    margin: 0;
+}
+
+.h1-index {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color:#D2691E;
+    text-align: center;
+}
+  
+h2 {
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #00008B;
+    font-size: 30px;
+}
+ 
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #008B8B;
+}
+
+p, li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+table {
+    width: 33%;
+    margin: 0 auto;
+    border: 1px solid brown;
+    border-collapse: collapse;
+    background-color: antiquewhite;
+}
+
+td, th {
+    border: 1px solid brown;
+    padding: 8px;
+}
+
+a {
+    text-decoration: none; 
+}
+
+a:visited {
+    color: gray;  
+}
+
+a:hover {
+    color: red; 
+    font-weight: bold;  
+}
+
+a:active {
+    color: green; 
+}
+
+label {
+    font-family: Arial, sans-serif;
+}
+
+.h1-formulario {
+    font-size: 25px;
+    color:brown;
+    font-family: Arial;
+}
+
+.body-formulario {
+    background-color:antiquewhite
+}
+
+  

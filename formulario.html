@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body class="body-formulario">
+    <h1 class="h1-formulario">Formulario de información</h1>
+    <form action="procesareserva.php" method="get">
+    <fieldset>
+        <legend>Sus Datos</legend>
+        <p>
+            <label for="nom">Nombre y apellidos:</label>
+            <input type="text" maxlength="50" 
+            name="nombre" id="nom">
+        </p>
+        <p>
+            <label for="contra">Contraseña:</label>
+            <input type="text" maxlength="8"
+            name="dni" id="dni">
+        </p>
+        <p>
+            <label for="user">Usuario</label>
+            <input type="text" id="usuario" name="usuario" value="anónimo" disabled>
+        </p>
+        <p>Nivel:</p>
+        <p>
+            <label for="ind">Profesional</label>
+            <input type="radio"
+            id="pro" name="nivel"
+            value="profesional">
+        </p>
+        <p>
+            <label for="av">Avanzado</label>
+            <input type="radio" value="avanzado"
+            id="avanzado" name="nivel"
+            checked>
+        </p>
+        <p>
+            <label for="pri">Principiante</label>
+            <input type="radio"
+            id="principiante" name="nivel"
+            value="principiante">
+        </p>
+    </fieldset>
+    <label for="nacionalidad">Nacionalidad:</label>
+    <select id="nacionalidad" name="nacionalidad" required>
+        <option value="" disabled selected>Selecciona tu nacionalidad</option>
+        <option value="España">España</option>
+        <option value="bolivia">Bolivia</option>
+        <option value="brasil">Brasil</option>
+        <option value="chile">Chile</option>
+        <option value="colombia">Colombia</option>
+        <option value="costa_rica">Costa Rica</option>
+        <option value="cuba">Cuba</option>
+        <option value="ecuador">Ecuador</option>
+        <option value="españa">España</option>
+        <option value="mexico">México</option>
+        <option value="peru">Perú</option>
+        <option value="uruguay">Uruguay</option>
+        <option value="venezuela">Venezuela</option>
+        <option value="otra">Otra</option>
+    </select>
+        <p>
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea>
+        </p>
+            <label for=""></label>
+        <p>
+            <label for="deseo">Deseo recibir información sobre novedades y ofertas:</label>
+            <input type="checkbox" id="deseo" name="deseo" checked>
+        </p>
+        <p>
+            <label for="declaro">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre
+            protección de datos
+            </label>
+            <input type="checkbox" id="declaro" name="declaro">
+        </p>
+        <p>
+            <label for="foto">Adjuntar foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar datos">
+        </p>
+    </form>
+</body>
+</html>
